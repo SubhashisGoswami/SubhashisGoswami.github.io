@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subhashis Goswami | Finance & Data Analyst | Founder, Invantage</title>
+<meta name="description" content="Subhashis Goswami — Finance & Data Analyst based in Hyderabad. 4.5+ years in accounting, GST/TDS, and factory operations. Founder of Invantage, an inventory management software. Skilled in Python, SQL, Excel, and AI-assisted tools.">
+<meta name="keywords" content="Subhashis Goswami, Invantage founder, Finance Data Analyst Hyderabad, Accounting professional India, Inventory management software founder">
+<meta name="author" content="Subhashis Goswami">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://subhashisgoswami.com/">
+
+<!-- Open Graph (Facebook/LinkedIn link previews) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Subhashis Goswami | Finance & Data Analyst | Founder, Invantage">
+<meta property="og:description" content="4.5+ years in accounting & operations, now building with data and AI. Founder of Invantage — inventory management software.">
+<meta property="og:url" content="https://subhashisgoswami.com/">
+<meta property="og:site_name" content="Subhashis Goswami">
+
+<!-- Twitter/X card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Subhashis Goswami | Finance & Data Analyst | Founder, Invantage">
+<meta name="twitter:description" content="4.5+ years in accounting & operations, now building with data and AI. Founder of Invantage.">
+
+<!-- Structured data so Google can show a Knowledge Panel-style result for your name -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Subhashis Goswami",
+  "jobTitle": "Finance & Data Analyst",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Sri Ankit Group of Companies"
+  },
+  "founder": {
+    "@type": "Organization",
+    "name": "Invantage",
+    "description": "Store & inventory management software"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "addressCountry": "IN"
+  },
+  "email": "ac.subhashis@gmail.com",
+  "knowsAbout": ["Accounting", "GST & TDS Compliance", "Data Analysis", "Python", "SQL", "Excel", "Inventory Management Software"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#101d17;
+    --ink-2:#16261e;
+    --paper:#f6f1e3;
+    --paper-2:#efe7d2;
+    --ledger-green:#2f6f4f;
+    --ledger-green-dark:#20503a;
+    --seal-gold:#b8862e;
+    --rule:#c9bfa0;
+    --ink-soft:#4b5d54;
+    --cream-text:#f2ede0;
+    --cream-text-soft:#c9c2ab;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink);
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(47,111,79,0.12), transparent 40%),
+      radial-gradient(circle at 85% 70%, rgba(184,134,46,0.08), transparent 45%);
+    color:var(--cream-text);
+    font-family:'Inter', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  .display{font-family:'Fraunces', serif;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px;}
+
+  /* ===== NAV ===== */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(16,29,23,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(201,191,160,0.15);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:64px;}
+  .brand{font-family:'Fraunces', serif; font-weight:600; font-size:1.05rem; letter-spacing:0.02em;}
+  .brand span{color:var(--seal-gold);}
+  .navlinks{display:flex; gap:28px; font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase;}
+  .navlinks a{color:var(--cream-text-soft); transition:color .2s;}
+  .navlinks a:hover{color:var(--seal-gold);}
+  .nav-toggle{display:none; background:none; border:none; color:var(--cream-text); font-size:1.4rem; cursor:pointer;}
+
+  /* ===== HERO — open ledger spread ===== */
+  .hero{padding:72px 0 40px;}
+  .ledger-spread{
+    display:grid; grid-template-columns:1fr 1fr;
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:6px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,0,0,0.05);
+    position:relative;
+    overflow:hidden;
+  }
+  .ledger-spread::before{
+    content:""; position:absolute; left:50%; top:0; bottom:0; width:1px;
+    background:linear-gradient(to bottom, transparent, var(--rule) 15%, var(--rule) 85%, transparent);
+    transform:translateX(-0.5px);
+  }
+  .ledger-page{padding:44px 40px;}
+  .ledger-page.left{border-right:none;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--ledger-green); margin-bottom:14px; display:flex; align-items:center; gap:8px;
+  }
+  .eyebrow::before{content:""; width:16px; height:1px; background:var(--ledger-green);}
+  .hero h1{font-family:'Fraunces', serif; font-weight:700; font-size:2.6rem; line-height:1.05; color:var(--ink); margin-bottom:6px;}
+  .hero .role{font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:1.15rem; color:var(--ledger-green-dark); margin-bottom:18px;}
+  .hero p.lede{font-size:0.98rem; color:var(--ink-soft); max-width:38ch; margin-bottom:24px;}
+  .hero-meta{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--ink-soft); display:flex; flex-direction:column; gap:6px; margin-bottom:26px;}
+  .hero-meta span b{color:var(--ink);}
+  .cta-row{display:flex; gap:12px; flex-wrap:wrap;}
+  .btn{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.03em;
+    padding:11px 18px; border-radius:3px; border:1px solid var(--ink); cursor:pointer; transition:all .2s;
+  }
+  .btn-solid{background:var(--ledger-green); color:var(--paper); border-color:var(--ledger-green);}
+  .btn-solid:hover{background:var(--ledger-green-dark);}
+  .btn-outline{background:transparent; color:var(--ink); border-color:var(--rule);}
+  .btn-outline:hover{border-color:var(--ink);}
+
+  /* right page: account summary */
+  .ledger-page.right{background:var(--paper-2);}
+  .summary-title{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--rule);}
+  .summary-row{display:flex; justify-content:space-between; align-items:baseline; padding:13px 0; border-bottom:1px dashed var(--rule); font-family:'IBM Plex Mono', monospace;}
+  .summary-row:last-of-type{border-bottom:1px solid var(--ink); margin-bottom:24px;}
+  .summary-row .label{font-size:0.82rem; color:var(--ink-soft);}
+  .summary-row .value{font-size:1.3rem; font-weight:600; color:var(--ledger-green-dark); font-family:'Fraunces', serif;}
+  .stamp-wrap{position:relative; margin-top:8px; display:flex; justify-content:flex-end;}
+  .stamp{
+    width:118px; height:118px; border-radius:50%;
+    border:2.5px solid var(--seal-gold);
+    color:var(--seal-gold);
+    display:flex; align-items:center; justify-content:center;
+    transform:rotate(-14deg) scale(0.94);
+    opacity:0; animation:stampIn 0.6s cubic-bezier(.2,1.4,.4,1) 0.9s forwards;
+    position:relative;
+  }
+  .stamp::before{
+    content:""; position:absolute; inset:6px; border:1px solid var(--seal-gold); border-radius:50%; opacity:0.6;
+  }
+  .stamp-text{
+    font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.1em; text-align:center; text-transform:uppercase; line-height:1.6;
+  }
+  @keyframes stampIn{
+    0%{opacity:0; transform:rotate(-14deg) scale(1.6);}
+    60%{opacity:1;}
+    100%{opacity:1; transform:rotate(-14deg) scale(1);}
+  }
+
+  @media (max-width:760px){
+    .ledger-spread{grid-template-columns:1fr;}
+    .ledger-spread::before{display:none;}
+    .ledger-page{padding:32px 24px;}
+    .hero h1{font-size:2rem;}
+    .navlinks{display:none;}
+  }
+
+  /* ===== SECTION SHARED ===== */
+  section{padding:70px 0;}
+  .section-head{display:flex; align-items:baseline; gap:16px; margin-bottom:38px;}
+  .section-num{font-family:'IBM Plex Mono', monospace; color:var(--seal-gold); font-size:0.85rem;}
+  .section-title{font-family:'Fraunces', serif; font-weight:600; font-size:1.9rem; color:var(--cream-text);}
+  .section-title span{color:var(--cream-text-soft); font-style:italic; font-weight:400; font-size:1.1rem; display:block; margin-top:2px;}
+  .rule-line{flex:1; height:1px; background:linear-gradient(to right, rgba(201,191,160,0.3), transparent);}
+
+  /* ===== ABOUT ===== */
+  .about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:48px; align-items:start;}
+  .about-grid p{color:var(--cream-text-soft); font-size:1rem; margin-bottom:16px; max-width:56ch;}
+  .about-grid strong{color:var(--cream-text);}
+  .about-card{
+    background:var(--paper); color:var(--ink); border-radius:6px; padding:26px;
+    font-family:'IBM Plex Mono', monospace; font-size:0.82rem;
+  }
+  .about-card .k{color:var(--ink-soft); display:block; font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; margin-top:14px;}
+  .about-card .k:first-child{margin-top:0;}
+  .about-card .v{color:var(--ledger-green-dark); font-weight:600;}
+  @media (max-width:760px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ===== SKILLS — balance sheet columns ===== */
+  .skills-sheet{
+    background:var(--paper); color:var(--ink); border-radius:6px; overflow:hidden;
+    box-shadow:0 20px 40px -20px rgba(0,0,0,0.5);
+  }
+  .skills-header-row{display:grid; grid-template-columns:repeat(3,1fr); border-bottom:2px solid var(--ink);}
+  .skills-header-row div{
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em;
+    padding:16px 22px; color:var(--ink-soft); border-right:1px solid var(--rule);
+  }
+  .skills-header-row div:last-child{border-right:none;}
+  .skills-body{display:grid; grid-template-columns:repeat(3,1fr);}
+  .skills-col{padding:22px; border-right:1px solid var(--rule);}
+  .skills-col:last-child{border-right:none;}
+  .skills-col ul{list-style:none;}
+  .skills-col li{
+    font-size:0.9rem; padding:9px 0; border-bottom:1px dashed var(--rule); color:var(--ink);
+    display:flex; justify-content:space-between; gap:10px;
+  }
+  .skills-col li:last-child{border-bottom:none;}
+  .skills-col li::before{content:"·"; color:var(--seal-gold); margin-right:6px;}
+  @media (max-width:760px){
+    .skills-header-row, .skills-body{grid-template-columns:1fr;}
+    .skills-header-row div, .skills-col{border-right:none; border-bottom:1px solid var(--rule);}
+  }
+
+  /* ===== EXPERIENCE — journal entries ===== */
+  .journal{position:relative; padding-left:2px;}
+  .journal::before{content:""; position:absolute; left:29px; top:6px; bottom:6px; width:1px; background:rgba(201,191,160,0.25);}
+  .entry{position:relative; padding-left:70px; margin-bottom:34px;}
+  .entry-num{
+    position:absolute; left:0; top:0; width:58px; height:58px; border-radius:50%;
+    background:var(--ink-2); border:1px solid var(--seal-gold); color:var(--seal-gold);
+    display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono', monospace; font-size:0.85rem; font-weight:600;
+  }
+  .entry-card{background:var(--paper); color:var(--ink); border-radius:6px; padding:24px 26px;}
+  .entry-top{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:4px;}
+  .entry-org{font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem; color:var(--ink);}
+  .entry-date{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; color:var(--ledger-green-dark); background:rgba(47,111,79,0.1); padding:3px 9px; border-radius:20px;}
+  .entry-role{font-family:'Fraunces', serif; font-style:italic; color:var(--ink-soft); font-size:0.95rem; margin-bottom:14px;}
+  .entry-card ul{list-style:none; margin-bottom:0;}
+  .entry-card li{font-size:0.87rem; color:var(--ink-soft); padding:5px 0; padding-left:16px; position:relative;}
+  .entry-card li::before{content:"—"; position:absolute; left:0; color:var(--seal-gold);}
+  .entry-tags{display:flex; gap:6px; flex-wrap:wrap; margin-top:14px;}
+  .tag{font-family:'IBM Plex Mono', monospace; font-size:0.68rem; background:var(--ledger-green); color:var(--paper); padding:4px 9px; border-radius:3px;}
+
+  /* ===== CERTIFICATIONS — seals ===== */
+  .seal-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px;}
+  .seal-card{
+    background:var(--ink-2); border:1px solid rgba(201,191,160,0.18); border-radius:6px; padding:24px;
+    text-align:center; transition:transform .2s, border-color .2s;
+  }
+  .seal-card:hover{transform:translateY(-4px); border-color:var(--seal-gold);}
+  .seal-ring{
+    width:64px; height:64px; margin:0 auto 14px; border-radius:50%; border:2px solid var(--seal-gold);
+    display:flex; align-items:center; justify-content:center; font-family:'Fraunces', serif; font-weight:600; font-size:1.3rem; color:var(--seal-gold);
+  }
+  .seal-name{font-family:'Fraunces', serif; font-weight:600; font-size:0.98rem; color:var(--cream-text); margin-bottom:4px;}
+  .seal-org{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--cream-text-soft); margin-bottom:8px;}
+  .seal-status{font-family:'IBM Plex Mono', monospace; font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; padding:3px 10px; border-radius:20px; display:inline-block;}
+  .seal-status.done{background:rgba(47,111,79,0.2); color:#7fc9a3;}
+  .seal-status.pursuing{background:rgba(184,134,46,0.2); color:var(--seal-gold);}
+  @media (max-width:760px){.seal-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:480px){.seal-grid{grid-template-columns:1fr;}}
+
+  /* ===== CONTACT — sign-off ===== */
+  .signoff{
+    background:var(--paper); color:var(--ink); border-radius:6px; padding:48px 44px;
+    display:grid; grid-template-columns:1.2fr 1fr; gap:40px;
+  }
+  .declaration{font-family:'Fraunces', serif; font-style:italic; font-size:1.15rem; line-height:1.6; color:var(--ink-soft); margin-bottom:22px;}
+  .signoff .name-line{font-family:'Fraunces', serif; font-weight:700; font-size:1.4rem; border-top:1px solid var(--ink); padding-top:14px; display:inline-block;}
+  .contact-list{font-family:'IBM Plex Mono', monospace; font-size:0.88rem;}
+  .contact-list a{display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px dashed var(--rule); color:var(--ink);}
+  .contact-list a:last-child{border-bottom:none;}
+  .contact-list .k{color:var(--ink-soft);}
+  .contact-list a:hover .v{color:var(--ledger-green-dark);}
+  @media (max-width:760px){.signoff{grid-template-columns:1fr;}}
+
+  footer{padding:30px 0 50px; text-align:center;}
+  footer p{font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--cream-text-soft); letter-spacing:0.04em;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">SUBHASHIS <span>GOSWAMI</span></div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="ledger-spread">
+      <div class="ledger-page left">
+        <div class="eyebrow">Ledger opened · Hyderabad, IN</div>
+        <h1>Subhashis<br>Goswami</h1>
+        <div class="role">Finance & Data Professional</div>
+        <p class="lede">Four and a half years closing books, filing GST/TDS without a miss, and running a factory floor end to end. Now applying that same discipline to data, automation, and AI-built tools — fast, self-taught, and production-minded.</p>
+        <div class="hero-meta">
+          <span><b>Based in</b> — Hyderabad, Telangana</span>
+          <span><b>Founder</b> — Invantage (Inventory Management Software)</span>
+          <span><b>Open to</b> — Full-time roles & project work</span>
+          <span><b>Reach</b> — ac.subhashis@gmail.com</span>
+        </div>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-solid">Get in touch</a>
+          <a href="#experience" class="btn btn-outline">View the ledger</a>
+        </div>
+      </div>
+      <div class="ledger-page right">
+        <div class="summary-title">Account Summary</div>
+        <div class="summary-row"><span class="label">Years in Finance & Ops</span><span class="value">4.5+</span></div>
+        <div class="summary-row"><span class="label">Head of Department (Factory Ops)</span><span class="value">4+ yrs</span></div>
+        <div class="summary-row"><span class="label">Certifications completed</span><span class="value">6</span></div>
+        <div class="summary-row"><span class="label">Core tools & platforms</span><span class="value">15+</span></div>
+        <div class="stamp-wrap">
+          <div class="stamp">
+            <div class="stamp-text">Skills<br>Verified<br>Not Degree</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">01</span>
+      <div class="section-title">About<span>The short version</span></div>
+      <div class="rule-line"></div>
+    </div>
+    <div class="about-grid">
+      <div>
+        <p>I run on <strong>learning speed</strong>. Give me a new tool, a new system, or a problem I've never touched, and I'll have a working answer faster than most people finish reading the manual — that's true whether it's GST compliance, an ERP migration, or building something with AI.</p>
+        <p>My background is accounting and operations: <strong>full-cycle bookkeeping, GST/TDS filing, financial statements, and audits</strong> at Sri Ankit Group of Companies, plus four-plus years heading a department that ran a factory floor — inward materials to client dispatch, SOPs, and client-facing coordination.</p>
+        <p>Alongside that, I taught myself <strong>Python, SQL, R, and AWS fundamentals</strong>, and I now build spreadsheets, dashboards, decks, and small AI-assisted tools the way I once built ledgers — carefully, and fast.</p>
+      </div>
+      <div class="about-card">
+        <span class="k">Founder</span>
+        <span class="v">Invantage — Inventory Management Software</span>
+        <span class="k">Currently</span>
+        <span class="v">Finance & Accounts, Sri Ankit Group</span>
+        <span class="k">Pursuing</span>
+        <span class="v">CA Intermediate (ICAI, 2025)</span>
+        <span class="k">Education</span>
+        <span class="v">MCA (IGNOU) · BA English</span>
+        <span class="k">Languages</span>
+        <span class="v">English · Hindi · Bengali</span>
+        <span class="k">Approach</span>
+        <span class="v">Skills & proof of work first</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">02</span>
+      <div class="section-title">Skills<span>Balance sheet</span></div>
+      <div class="rule-line"></div>
+    </div>
+    <div class="skills-sheet">
+      <div class="skills-header-row">
+        <div>Finance & Compliance</div>
+        <div>Data & Technology</div>
+        <div>Tools & Platforms</div>
+      </div>
+      <div class="skills-body">
+        <div class="skills-col">
+          <ul>
+            <li>Financial Accounting</li>
+            <li>GST & TDS Filing</li>
+            <li>Financial Reporting</li>
+            <li>Audit Support</li>
+            <li>Accounts Payable/Receivable</li>
+            <li>Legal Drafting (GST Notices, Agreements)</li>
+            <li>SOP & Process Documentation</li>
+            <li>Client & Vendor Management</li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <ul>
+            <li>Python & SQL</li>
+            <li>R Programming</li>
+            <li>Data Cleaning & Visualization</li>
+            <li>AWS Data Handling (Basic)</li>
+            <li>Dashboard & KPI Tracking</li>
+            <li>Automation & AI-assisted Builds</li>
+            <li>App Prototyping with AI</li>
+            <li>Business & Performance Analysis</li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <ul>
+            <li>Advanced MS Excel</li>
+            <li>Full MS Office Suite</li>
+            <li>Tally & Cygrus ERP</li>
+            <li>PowerPoint / Deck Design</li>
+            <li>Windows Systems Admin</li>
+            <li>Document & Report Design</li>
+            <li>Content & Report Writing</li>
+            <li>Digital Basics (SEO, Web mgmt)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">03</span>
+      <div class="section-title">Experience<span>Journal entries, in order</span></div>
+      <div class="rule-line"></div>
+    </div>
+    <div class="journal">
+
+      <div class="entry">
+        <div class="entry-num mono">01</div>
+        <div class="entry-card">
+          <div class="entry-top">
+            <div class="entry-org">Sri Ankit Group of Companies</div>
+            <div class="entry-date">May 2024 — Present</div>
+          </div>
+          <div class="entry-role">Finance & Accounts Department</div>
+          <ul>
+            <li>Manage full-cycle accounting — journal entries, invoicing, taxation, finalization</li>
+            <li>Handle GST & TDS filings with zero major errors, on statutory timelines</li>
+            <li>Prepare MIS reports and financial statements for accurate month/year-end closing</li>
+            <li>Oversee AP/AR, vendor reconciliation, and support audits with no discrepancies</li>
+            <li>Guide junior staff on accuracy and documentation standards</li>
+          </ul>
+          <div class="entry-tags"><span class="tag">GST/TDS</span><span class="tag">MIS Reporting</span><span class="tag">Advanced Excel</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-num mono">02</div>
+        <div class="entry-card">
+          <div class="entry-top">
+            <div class="entry-org">Galetech Industries</div>
+            <div class="entry-date">Nov 2023 — Apr 2024</div>
+          </div>
+          <div class="entry-role">Dispatch Supervisor — Operations & Logistics</div>
+          <ul>
+            <li>Managed dispatch operations and coordinated logistics for smooth workflow</li>
+            <li>Maintained accurate inventory and delivery records, reducing tracking errors</li>
+            <li>Coordinated with warehouse and transport teams for timely dispatch</li>
+          </ul>
+          <div class="entry-tags"><span class="tag">Inventory</span><span class="tag">Logistics</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-num mono">03</div>
+        <div class="entry-card">
+          <div class="entry-top">
+            <div class="entry-org">BDO Office, Nayagram (Government)</div>
+            <div class="entry-date">Mar 2022 — Nov 2022</div>
+          </div>
+          <div class="entry-role">Block Data Manager Staff — Data Management & Administration</div>
+          <ul>
+            <li>Maintained block-level data records with high accuracy for government reporting</li>
+            <li>Ran data entry, validation, and verification to protect data integrity</li>
+            <li>Coordinated with field staff for timely, reliable data submission</li>
+          </ul>
+          <div class="entry-tags"><span class="tag">Data Integrity</span><span class="tag">Excel Reporting</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-num mono">04</div>
+        <div class="entry-card">
+          <div class="entry-top">
+            <div class="entry-org">ITC Limited</div>
+            <div class="entry-date">Sep 2021 — Apr 2022</div>
+          </div>
+          <div class="entry-role">Accounts Training (Internship) — Corporate Accounting Division</div>
+          <ul>
+            <li>Assisted accounting entries, ledger maintenance, and voucher entries</li>
+            <li>Supported GST and basic taxation work in a corporate environment</li>
+            <li>Built a strong foundation in compliance and financial documentation</li>
+          </ul>
+          <div class="entry-tags"><span class="tag">Corporate Accounting</span></div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-num mono">05</div>
+        <div class="entry-card">
+          <div class="entry-top">
+            <div class="entry-org">iMerit Technology Services</div>
+            <div class="entry-date">Jun 2021 — Dec 2021</div>
+          </div>
+          <div class="entry-role">Data Analyst Training</div>
+          <ul>
+            <li>Hands-on training in Python, SQL, and R on real datasets</li>
+            <li>Performed data cleaning, database queries, and extraction</li>
+            <li>First exposure to data workflows and basic AWS concepts</li>
+          </ul>
+          <div class="entry-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">04</span>
+      <div class="section-title">Certifications<span>Stamped & sealed</span></div>
+      <div class="rule-line"></div>
+    </div>
+    <div class="seal-grid">
+      <div class="seal-card">
+        <div class="seal-ring">CA</div>
+        <div class="seal-name">CA Intermediate</div>
+        <div class="seal-org">ICAI</div>
+        <span class="seal-status pursuing">Pursuing · 2025</span>
+      </div>
+      <div class="seal-card">
+        <div class="seal-ring">Py</div>
+        <div class="seal-name">Python, R & SQL</div>
+        <div class="seal-org">WsCube Tech</div>
+        <span class="seal-status done">Completed</span>
+      </div>
+      <div class="seal-card">
+        <div class="seal-ring">DA</div>
+        <div class="seal-name">Data Analysis</div>
+        <div class="seal-org">Microsoft</div>
+        <span class="seal-status done">Completed</span>
+      </div>
+      <div class="seal-card">
+        <div class="seal-ring">AWS</div>
+        <div class="seal-name">AWS Data Management</div>
+        <div class="seal-org">Amazon</div>
+        <span class="seal-status done">Completed</span>
+      </div>
+      <div class="seal-card">
+        <div class="seal-ring">EH</div>
+        <div class="seal-name">Ethical Hacking & Testing</div>
+        <div class="seal-org">Google</div>
+        <span class="seal-status done">Completed</span>
+      </div>
+      <div class="seal-card">
+        <div class="seal-ring">MCA</div>
+        <div class="seal-name">Master of Computer Applications</div>
+        <div class="seal-org">IGNOU</div>
+        <span class="seal-status done">Completed · 2021</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-num mono">05</span>
+      <div class="section-title">Contact<span>Sign-off</span></div>
+      <div class="rule-line"></div>
+    </div>
+    <div class="signoff">
+      <div>
+        <p class="declaration">"I hereby declare that everything above is true, current, and — more importantly — still growing. If you're hiring for skill and speed of learning over a line on a certificate, let's talk."</p>
+        <span class="name-line">Subhashis Goswami</span>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:ac.subhashis@gmail.com"><span class="k">Email</span><span class="v">ac.subhashis@gmail.com</span></a>
+        <a href="tel:+918167528060"><span class="k">Phone</span><span class="v">+91 81675 28060</span></a>
+        <a href="#"><span class="k">Location</span><span class="v">Hyderabad, Telangana</span></a>
+        <a href="#"><span class="k">LinkedIn</span><span class="v">add your profile link</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>LEDGER CLOSED · SUBHASHIS GOSWAMI · HYDERABAD, INDIA</p>
+</footer>
+
+</body>
+</html>
