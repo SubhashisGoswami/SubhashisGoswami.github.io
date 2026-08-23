@@ -96,8 +96,8 @@
   }
   .hero-bg-photo{
     position:absolute; top:0; right:0; height:100%; width:50%;
-    object-fit:cover; object-position:75% 22%; z-index:0;
-    transform:scale(1.08); transform-origin:65% 20%;
+    object-fit:cover; object-position:82% 12%; z-index:0;
+    transform:scale(1.32); transform-origin:70% 8%;
   }
   .hero-tint{
     position:absolute; top:0; right:0; height:100%; width:50%; z-index:0.5; pointer-events:none;
@@ -107,6 +107,10 @@
   .hero-vignette{
     position:absolute; top:0; right:0; height:100%; width:50%; z-index:0.6; pointer-events:none;
     box-shadow:inset 0 50px 60px -40px var(--ink), inset 0 -60px 70px -40px var(--ink);
+  }
+  .hero-patch{
+    position:absolute; left:0; bottom:0; width:22%; height:32%; z-index:0.7; pointer-events:none;
+    background:radial-gradient(circle at 15% 100%, var(--ink) 0%, var(--ink) 30%, transparent 70%);
   }
   .hero-content{position:relative; z-index:2; padding:110px 0 80px 6%; width:fit-content; max-width:560px;}
   .hero-content::before{
@@ -236,6 +240,9 @@
   <img src="photo.png" alt="Subhashis Goswami" class="hero-bg-photo" onerror="this.style.display='none';">
   <div class="hero-tint"></div>
   <div class="hero-vignette"></div>
+  <div style="position:absolute; right:0; bottom:0; width:50%; height:100%; z-index:0.7; pointer-events:none;">
+    <div class="hero-patch"></div>
+  </div>
   <div class="hero-content max-text-col">
     <div class="eyebrow">Hello, I'm</div>
     <h1>Subhashis<br>Goswami</h1>
