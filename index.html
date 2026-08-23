@@ -95,26 +95,32 @@
     pointer-events:none; z-index:0;
   }
   .hero-bg-photo{
-    position:absolute; top:0; right:0; height:100%; width:50%;
-    object-fit:cover; object-position:center 20%; z-index:0;
+    position:absolute; top:0; right:0; height:100%; width:46%;
+    object-fit:cover; object-position:70% 22%; z-index:0;
+    transform:scale(1.14); transform-origin:60% 20%;
+    -webkit-mask-image:linear-gradient(to right, transparent 0%, black 22%);
+    mask-image:linear-gradient(to right, transparent 0%, black 22%);
+    filter:saturate(0.92) brightness(0.97);
   }
-  .hero-overlay{
-    position:absolute; inset:0; z-index:1; pointer-events:none;
-    background:linear-gradient(to right, var(--ink) 0%, var(--ink) 38%, rgba(13,23,18,0.55) 52%, transparent 68%);
+  .hero-tint{
+    position:absolute; top:0; right:0; height:100%; width:46%; z-index:0.5; pointer-events:none;
+    background:linear-gradient(160deg, rgba(63,122,84,0.16), rgba(13,23,18,0.1));
+    mix-blend-mode:multiply;
   }
-  .hero-content{position:relative; z-index:2; padding:110px 0 80px;}
+  .hero-content{position:relative; z-index:2; padding:110px 0 80px 6%; background:var(--ink); width:fit-content; max-width:560px;}
+  .hero-content::before{content:""; position:absolute; top:0; left:-100vw; bottom:0; width:100vw; background:var(--ink); z-index:-1;}
   @media (max-width:900px){
     .hero{min-height:auto; display:block;}
-    .hero-bg-photo{position:relative; width:100%; height:340px; margin-top:20px;}
-    .hero-overlay{display:none;}
-    .hero-content{padding:50px 0 20px;}
+    .hero-bg-photo{position:relative; width:100%; height:340px; transform:none; -webkit-mask-image:none; mask-image:none;}
+    .hero-tint{display:none;}
+    .hero-content{padding:50px 24px 20px; max-width:100%; width:100%;}
+    .hero-content::before{display:none;}
   }
   .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--green-light); margin-bottom:18px;}
-  .hero h1{font-family:'Fraunces', serif; font-weight:700; font-size:3.5rem; line-height:1.06; color:var(--cream-text); margin-bottom:14px;}
+  .hero h1{font-family:'Fraunces', serif; font-weight:700; font-size:3.4rem; line-height:1.06; color:var(--cream-text); margin-bottom:14px;}
   .hero .role{font-family:'Fraunces', serif; font-weight:600; font-size:1.3rem; color:var(--green-light); margin-bottom:18px;}
   .hero p.lede{font-size:1rem; color:var(--cream-soft); max-width:44ch; margin-bottom:30px;}
   .hero-cta{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px;}
-  .max-text-col{max-width:560px;}
   .btn{font-family:'Inter', sans-serif; font-weight:600; font-size:0.92rem; padding:14px 26px; border-radius:8px; display:inline-flex; align-items:center; gap:10px; transition:all .2s; border:1px solid transparent;}
   .btn-solid{background:var(--green); color:#fff;}
   .btn-solid:hover{background:#356a48;}
@@ -224,26 +230,24 @@
 
 <header id="home" class="hero">
   <img src="photo.png" alt="Subhashis Goswami" class="hero-bg-photo" onerror="this.style.display='none';">
-  <div class="hero-overlay"></div>
-  <div class="wrap">
-    <div class="hero-content max-text-col">
-      <div class="eyebrow">Hello, I'm</div>
-      <h1>Subhashis<br>Goswami</h1>
-      <div class="role">Finance & Data Analyst | Founder, Invantage</div>
-      <p class="lede">4.5+ years turning ledgers, GST filings, and factory floors into clean, reliable numbers — now applying that same discipline to data, automation, and AI-built tools.</p>
-      <div class="hero-cta">
-        <a href="#experience" class="btn btn-solid">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-envelope"></i> Contact Me</a>
-      </div>
-      <div class="social-row">
-        <a href="https://www.linkedin.com/in/subhashis-goswami" target="_blank" class="social-circle"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://x.com/Subhashis_x" target="_blank" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://instagram.com/subhashisgoswami.ig" target="_blank" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/subhashisgoswami.fb/" target="_blank" class="social-circle"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="mailto:ac.subhashis@gmail.com" class="social-circle"><i class="fa-regular fa-envelope"></i></a>
+  <div class="hero-tint"></div>
+  <div class="hero-content max-text-col">
+    <div class="eyebrow">Hello, I'm</div>
+    <h1>Subhashis<br>Goswami</h1>
+    <div class="role">Finance & Data Analyst | Founder, Invantage</div>
+    <p class="lede">4.5+ years turning ledgers, GST filings, and factory floors into clean, reliable numbers — now applying that same discipline to data, automation, and AI-built tools.</p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn btn-solid">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-envelope"></i> Contact Me</a>
+    </div>
+    <div class="social-row">
+      <a href="https://www.linkedin.com/in/subhashis-goswami" target="_blank" class="social-circle"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://x.com/Subhashis_x" target="_blank" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://instagram.com/subhashisgoswami.ig" target="_blank" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/subhashisgoswami.fb/" target="_blank" class="social-circle"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="mailto:ac.subhashis@gmail.com" class="social-circle"><i class="fa-regular fa-envelope"></i></a>
       </div>
     </div>
-  </div>
 </header>
 
 <section id="about">
